@@ -1,16 +1,16 @@
 const UsuariosServices = require('../services/UsuariosServices');
 
-UsuariosServices.listar();
+// UsuariosServices.listar();
 
 let usuarioDeTeste = {
-    nome:"Rafael Silva",
-    email: "rafinha@silva.com",
+    nome:"Lidiane Faria",
+    email: "falecom@lidifaria.com",
     senha: "1234567",
-    endereco: "Rua itú, 99. SBC",
+    endereco: "Rua Margarida, 12 - SBC",
     formasDePagamento: "1234 3434 2534 8736"
 }
 
-// UsuarioServices.cadastrar(usuarioDeTeste);
+UsuariosServices.cadastrar(usuarioDeTeste);
 // UsuariosServices.detalhar(2);
 // UsuariosServices.remover(4);
 
