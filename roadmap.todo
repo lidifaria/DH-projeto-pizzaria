@@ -169,7 +169,6 @@ Fase 3 - Funções dentro do arquivo PedidosServices.js:
     Função removerPizza:
     Função marcarComoEntregue:
     
-            
-    
-
-    
+// Link do repositório do Prof. Sergio: https://github.com/sergiomoura/pizzaria-cli
+  
+// no css geral, raramente cabe definir o tamanho das coisas (exemplo: tamanho de botão), pq ele impacta no site todo
