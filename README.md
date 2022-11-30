@@ -1,3 +1,7 @@
 # Projeto Pizzaria
 
-Projeto de uma aplicação pizzaria, para aperfeiçoamento de construção de funções em JavaScript. Em construção!
+Projeto para Digital House, com o objetivo de construção de uma aplicação pizzari.
+
+Aperfeiçoamento de construção de funções em JavaScript, HTML e CSS.
+
+Em construção.
