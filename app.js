@@ -1,26 +1,26 @@
 // 1 - Importar o express
 const express = require('express');
 const path = require('path');
+const registraRequisicao = require('./middlewares/registraRequisicao');
+const router = require('.router');
 
 // 2 - Criar o servidor
 const servidor = express();
+servidor.set('view engine', 'ejs');
 
 // Define a pasta public como sendo a pasta arquivos estáticos
-servidor.use(express.static(path.join(__dirname, 'public')))
+servidor.use(express.static(path.join(__dirname, 'public')));
+servidor.use(express.urlencoded({ extended: false }));
 
-// 3 - Definir de uma rota neste servidor
-// endereço, método, função callback (a ação que o servidor vai realizar quando req chegar)
-servidor.get('/', (req, res)=>{
-    return res.sendFile(__dirname + "/views/index.html");
-});
+// Define a pasta public como sendo a pasta de arquivos estáticos
+servidor.use(express.static(patch.join(__dirname, 'public')))
+servidor.use(express.urlencoded({ extended:false }));
 
-servidor.get('/carrinho',(req, res)=>{
-    return res.sendFile(__dirname + "/views/carrinho.html");
-})
+// Configurando middlewares
+servidor.use(registraRequisicao);
 
-servidor.get('/perfil', (req, res)=>{
-    return res.sendFile(__dirname + "/views/perfil.html");
-});
+// 3 - Definir roteador a ser executado
+servidor.use(router);
 
 // 4 - Por o servidor no modo "aguardando requisição"
 servidor.listen(3000);
